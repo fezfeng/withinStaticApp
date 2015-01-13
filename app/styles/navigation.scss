@@ -1,0 +1,31 @@
+.navbar-within {
+	background: white;
+	border-bottom: 1px solid #efefef;
+	.navbar-nav {
+		> li {
+			> a {
+				color: #777;
+				font-size: 1.1em;
+				// font-weight: bold;
+				// font-size: 0.8em;
+				// text-transform: uppercase;
+				&:hover {
+					background: transparent;
+					color: #DA552F;
+				}
+			}
+			&.active {
+				background: #efefef;
+			}
+		}
+	}
+	.navbar-brand {
+		color: #444;
+		font-weight: bold;
+		padding: 10px;
+		img {
+			width: auto;
+			height: 40px;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+$icon-font-path: "../../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300,500,400italic,700,500italic,900,700italic,900italic);
+// bower:scss
+@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+/*================
+GLOBAL MODULES
+================*/
+@import "../bower_components/radios-to-slider/css/radios-to-slider.css";
+@import "globals";
+@import "navigation";
+/*================
+PAGE MODULES
+================*/
+@import "journey";
+@import "my_foods";
+@import "food_detail";
+@import "nutrients";

@@ -1,0 +1,149 @@
+<div id="my-journey">
+  <div class="container-fluid structure">
+    <div class="row">
+      <div class="col-md-8 col-sm-8">
+        <div class="structure-streak-counter">
+          <header class="header"><h1>Week 1</h1></header>
+          <section class="week">
+            <ul class="days">
+              <li>
+                <div class="day used" data-toggle="tooltip" data-placement="top" title="Day 1 Complete!">
+                  <span class="name"><span class="glyphicon glyphicon-ok"></span></span>
+                </div>
+              </li>
+              <li>
+                <div class="day used" data-toggle="tooltip" data-placement="top" title="Day 2 Complete!">
+                  <span class="name"><span class="glyphicon glyphicon-ok"></span></span>
+                </div>
+              </li>
+              <li>
+                <div class="day used" data-toggle="tooltip" data-placement="top" title="Day 3 Complete!">
+                  <span class="name"><span class="glyphicon glyphicon-ok"></span></span>
+                </div>
+              </li>
+              <li>
+                <div class="day used" data-toggle="tooltip" data-placement="top" title="Day 4 Complete!">
+                  <span class="name"><span class="glyphicon glyphicon-ok"></span></span>
+                </div>
+              </li>
+              <li>
+                <div class="day active" data-toggle="tooltip" data-placement="top" title="Your Current Day!">
+                  <span class="name">5</span>
+                </div>
+              </li>
+              <li>
+                <div class="day" data-toggle="tooltip" data-placement="top" title="Finish previous day first">
+                  <span class="name">6</span>
+                </div>
+              </li>
+              <li>
+                <div class="day" data-toggle="tooltip" data-placement="top" title="Finish previous day first">
+                  <span class="name">7</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section class="structure-main">
+          <header class="header">
+            <h2>Day 5: Checking in <!-- <br><small>By: <a href="#" id="profile-card">Julian Weiner</a></small> --></h2>
+          </header>
+          <h2>Sarah, You're on a role!</h2>
+          <div class="image small">
+            <img src="images/eggs.jpg" alt="picture of eggs">
+          </div>
+          <h3>It's your 5th day of Within Breakfasts</h3>
+          
+          <form action="." method="POST" class="form" role="form">
+            <div class="form-group small">
+              <h4>What are you eating today ?</h4>
+              <input type="text" class="form-control input-lg input-focus">
+            </div>
+            <div class="form-group">
+              <h4>How are you feeling today ?</h4>
+              <div class="mood">
+                <div id="radios">
+                    <input id="option1" name="options" type="radio">
+                    <label for="option1">Crappy</label>
+                    <input id="option2" name="options" type="radio">
+                    <label for="option2">Alright</label>
+                    <input id="option3" name="options" type="radio" checked>
+                    <label for="option3">OK</label>
+                    <input id="option4" name="options" type="radio">
+                    <label for="option4">Good</label>
+                    <input id="option5" name="options" type="radio">
+                    <label for="option5">Amazing!</label>
+                </div>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-within btn-lg" value="Let's Do This!">
+          </form>
+        </section>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <section class="structure-aside">
+          <!-- <div class="streak-overview">
+            <div class="streak">
+              <h4>Day Streak: <span class="days">11</span></h4> 
+            </div>
+            <div class="pounds-lost">
+              <h4>Pounds Lost: <span class="pounds">4</span></h4> 
+            </div>
+          </div> -->
+          <div class="your-trophies">
+            <h4>Latest Trophies</h4>
+            <div class="trophies">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="trophy" data-toggle="tooltip" data-placement="top" title="Your newbie trophy!">
+                    <img src="images/trophy-1.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-4" data-toggle="tooltip" data-placement="top" title="You've done 5 days in a row!!">
+                  <div class="trophy">
+                    <img src="images/trophy-2.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-4" data-toggle="tooltip" data-placement="top" title="Wow, 7 day streak!!!">
+                  <div class="trophy">
+                    <img src="images/trophy-3.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="community-updates">
+            <h4>Community Updates</h4>
+            <div class="updateIterator" ng-repeat="item in updates">
+              <div class="update">
+                <div class="row">
+                  <!-- <div class="col-md-2">
+                    <div class="image">
+                      <img src="http://www.fillmurray.com/200/200" alt="" class="img-circle">
+                    </div>
+                  </div> -->
+                  <div class="col-md-12">
+                      <div class="content">
+                       <a href="http://104.236.108.130/users/{{item.author}}">{{item.author}}</a> | <a href="#"  data-toggle="modal" data-target="#myModal">{{item.comments.length}} replies</a>
+                        <h4><a href="http://104.236.108.130/posts/{{item.guid}}">{{item.headline}}</a></h4>
+                        <footer class="meta">
+                        <!--
+                          <div class="pull-right">
+                            <div class="btn-group" role="group">
+                              <a href="http://104.236.108.130/posts/{{item.guid}}" class="btn btn-default btn-sm">reply</a>
+                              <a href="{{item.url}}" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            </div>
+                          </div>
+                        -->
+                        </footer>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

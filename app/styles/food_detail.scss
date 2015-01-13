@@ -1,0 +1,32 @@
+#food-detail {
+	.header-main {
+		background-size: cover;
+		// padding: 100px 50px;
+		height: 400px;
+		position: relative;
+		h1 {
+			position: absolute;
+			left: 20px;
+			bottom: 20px;
+			font-size: 5em;
+			font-weight: 100 !important;
+			color: white;
+		}
+	}
+	.food-detail-content {
+		padding: 50px;
+		font-size: 1.2em;
+		.graphs {
+			margin: 50px -50px;
+			.graph {
+				background-color: #ffffff;
+				background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyNzknIGhlaWdodD0nMjc5JyB2aWV3Qm94PScwIDAgMjc5IDI3OSc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBpZD0nYmx1ZXN0cmlwZScgcGF0dGVyblVuaXRzPSd1c2VyU3BhY2VPblVzZScgeD0nMCcgeT0nMCcgd2lkdGg9JzQ2LjUnIGhlaWdodD0nNDYuNScgdmlld0JveD0nMCAwIDkzIDkzJyA+CgkJPHJlY3Qgd2lkdGg9JzExMCUnIGhlaWdodD0nMTEwJScgZmlsbD0nI2ZmZmZmZicvPgoJCQk8cGF0aCBkPSdNMSwxaDkzdjkzaC05M3YtOTMnIGZpbGwtb3BhY2l0eT0nMCcgc3Ryb2tlLXdpZHRoPScwLjU1JyBzdHJva2UtZGFzaGFycmF5PScwLDEsMScgc3Ryb2tlPScjY2NjY2NjJy8+CgkJPC9wYXR0ZXJuPiAKCQk8ZmlsdGVyIGlkPSdmdXp6JyB4PScwJyB5PScwJz4KCQkJPGZlVHVyYnVsZW5jZSB0eXBlPSd0dXJidWxlbmNlJyByZXN1bHQ9J3QnIGJhc2VGcmVxdWVuY3k9Jy4yIC4zJyBudW1PY3RhdmVzPSc1JyBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+CgkJCTxmZUNvbG9yTWF0cml4IHR5cGU9J3NhdHVyYXRlJyBpbj0ndCcgdmFsdWVzPScwJy8+CgkJPC9maWx0ZXI+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2JsdWVzdHJpcGUpJy8+CjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNmdXp6KScgb3BhY2l0eT0nMC4wNCcvPgo8L3N2Zz4K');
+				min-height: 500px;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}

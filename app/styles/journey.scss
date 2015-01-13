@@ -1,0 +1,243 @@
+$purple: #422040;
+#my-journey {
+	.structure {
+		.structure-streak-counter {
+			.header {
+				margin: 20px 0;
+				h1 {
+					margin: 0;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+			}
+			.week {
+				margin-bottom: 20px;
+				ul.days {
+					padding: 0;
+					> li {
+						padding: 0;
+						display: inline-block;
+						list-style: none;
+						.day {
+							position: relative;
+							padding: 25px;
+							background: white;
+							border: 7px solid #ccc;
+							color: #ccc;
+							width: 80px;
+							height: 80px;
+							text-align: center;
+							margin-right: 20px;
+							-webkit-border-radius: 500%;
+							-moz-border-radius: 500%;
+							border-radius: 500%;
+							-webkit-animation: trophies 1s;
+							animation: trophies 1s;
+							.name {
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								margin-top: -14px;
+								margin-left: -12.5px;
+								width: 25px;
+								height: 25px;
+								font-size: 1.6em;
+								font-weight: bold;
+							}
+						}
+						.active {
+							border: 7px solid #DA552F;
+							color: #444;
+						}
+						.used {
+							border-color: #B5E655;
+							background: #B5E655;
+							color: #8CC222;
+						}
+					}
+				}
+			}
+		}
+		.structure-main {
+			position: relative;
+			padding: 50px;
+			font-size: 1.2em;
+			background: white;
+			margin-left: -15px;
+			border: 1px solid #efefef;
+			-webkit-border-top-right-radius: 20px;
+			-moz-border-top-right-radius: 20px;
+			border-top-right-radius: 20px;
+			-webkit-border-bottom-right-radius: 20px;
+			-moz-border-bottom-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+			text-align: center;
+			margin-bottom: 50px;
+			.input-focus {border: 3px solid #DA552F;}
+			.header {
+				// position: absolute;
+				text-align: left;
+				margin-top: -25px;
+				// background: #DA552F;
+				padding: 25px 25px 25px 50px;
+				// color: white;
+				margin-left: -50px;
+				// border-right: 5px solid #BE2121;
+				h2 {
+					margin: 0;
+					small {
+						// color: white;
+					}
+				}
+			}
+			.image {
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.small {
+				width: 40%;
+				margin: 0 auto;
+			}
+			.form-group {
+				margin-bottom: 25px;
+			}
+		}
+		.structure-aside {
+			.streak-overview {
+				padding-bottom: 25px;
+				// margin-bottom: 25px;
+				margin: 25px;
+				padding: 25px;
+				background: white;
+				-webkit-border-radius: 20px;
+				-moz-border-radius: 20px;
+				border-radius: 20px;
+				border: 1px solid #efefef;
+				.streak, .pounds-lost {
+					text-align: center;	
+				}
+			}
+			.your-trophies {
+				// padding-bottom: 25px;
+				padding: 25px;
+				// margin-bottom: 25px;
+				.trophies {
+					.trophy {
+						-webkit-transition: all 0.2s linear;
+						-moz-transition: all 0.2s linear;
+						transition: all 0.2s linear;
+						-webkit-transform: rotate(0deg);
+						-moz-transform: rotate(0deg);
+						transform: rotate(0deg);
+						&:hover {
+							-webkit-transform: rotate(10deg);
+							-moz-transform: rotate(10deg);
+							transform: rotate(10deg);
+						}
+						img {
+							width: 100%;
+							height: auto;
+						}
+					}
+				}
+			}
+			.community-updates {
+				padding: 25px;
+				.update {
+					// margin-bottom: 25px;
+					.image {
+						margin-top: 15px;
+						img {
+							width: 100%;
+							height: auto;
+						}
+					}
+					.content {
+						// background: white;
+						// border: 1px solid #efefef;
+						padding: 10px;
+						border-bottom: 1px solid #efefef;
+						position: relative;
+						// &:before, &:after {
+						// 	right: 100%;
+						// 	top: 40px;
+						// 	border: solid transparent;
+						// 	content: " ";
+						// 	height: 0;
+						// 	width: 0;
+						// 	position: absolute;
+						// 	pointer-events: none;
+						// }
+						// &:before {
+						// 	border-color: rgba(255, 255, 255, 0);
+						// 	border-right-color: #efefef;
+						// 	border-width: 21px;
+						// 	margin-top: -21px;
+						// }
+						// &:after {
+						// 	border-color: rgba(136, 183, 213, 0);
+						// 	border-right-color: white;
+						// 	border-width: 20px;
+						// 	margin-top: -20px;
+						// }
+						h4 {
+							color: #444;
+							margin: 0;
+						}
+						.pull-right {
+							display: block;
+							text-align: right;
+						}
+						a {
+							color: #777;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes trophies {
+    from { 
+    	-webkit-transform: translate3d(0px, 115px, 0);
+		-moz-transform: translate3d(0px, 115px, 0);
+		transform: translate3d(0px, 115px, 0);
+    }
+    to {
+    	-webkit-transform: translate3d(0px, 0, 0);
+		-moz-transform: translate3d(0px, 0, 0);
+		transform: translate3d(0px, 0, 0);
+    }
+} 
+
+@keyframes trophies {
+    from {
+    	-webkit-transform: translate3d(0px, 115px, 0);
+		-moz-transform: translate3d(0px, 115px, 0);
+		transform: translate3d(0px, 115px, 0);
+    }
+    to {
+    	-webkit-transform: translate3d(0px, 0, 0);
+		-moz-transform: translate3d(0px, 0, 0);
+		transform: translate3d(0px, 0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
